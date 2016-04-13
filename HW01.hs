@@ -26,7 +26,9 @@ doubleEveryOther = undefined
 
 -- Calculate the sum of all the digits in every Integer.
 sumDigits :: [Integer] -> Integer
-sumDigits = undefined
+sumDigits [] = 0
+sumDigits (x:[]) = x
+sumDigits (x:zs) = x + sumDigits(zs)
 
 
 -- Exercise 5 -----------------------------------------
