@@ -14,7 +14,7 @@ dropLastDigit = undefined
 -- Exercise 2 -----------------------------------------
 
 toRevDigits :: Integer -> [Integer]
-toRevDigits = undefined
+toRevDigits n = if n <= 0 then [] else if n < 10 then n : [] else mod n 10 : toRevDigits(div n 10)
 
 -- Exercise 3 -----------------------------------------
 
